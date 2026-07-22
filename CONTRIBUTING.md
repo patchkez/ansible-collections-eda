@@ -63,6 +63,6 @@ ansible-playbook productize.yml
 
 Also GH tag-and-release pipeline builds the collection and you can download the artifact from there.
 
-To upload/update the collection in Automation hub manually, [navigate to](https://console.redhat.com/ansible/automation-hub/repo/published/redhat/insights_eda).
-Upload collection file (without zip extension which is added by GH action) and upload it into stage repositories. Manual approval fro RH engineer is needed in order to get it published.
+To upload/update the collection in Automation hub manually, [navigate to](https://console.redhat.com/ansible/automation-hub/collections/published/redhat/insights_eda).
+Upload collection file (without zip extension which is added by GH action) and upload it into stage repositories. Manual approval from RH engineer is needed in order to get it published.
 More information how to upload collection into automation hub can be found [here](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/managing_automation_content/managing-collections-hub#proc-uploading-collections).
