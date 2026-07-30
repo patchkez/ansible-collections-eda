@@ -15,3 +15,5 @@ exclude_paths:
 # still visible, making it easier to address later.
 skip_list:
   - galaxy[version-incorrect]
+
+profile: production
