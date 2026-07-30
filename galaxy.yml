@@ -72,3 +72,6 @@ build_ignore:
   - .github/
   - galaxy.hub.yml
   - productize.yml
+  - CODEOWNERS
+  - tests/
+  - tox.ini
