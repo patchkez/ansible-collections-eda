@@ -1,5 +1,13 @@
 # Event-Driven Ansible for Red Hat Insights Changes
 
+## [1.2.6]
+### Fixed [RHINENG-26295]
+ - fix: ansible-lint profile not set to production
+ - fix: Productize- Missing "Support" section
+ - fix:  Non-content files in the tarball
+ - fix: BLOCKER - requires_ansible must be updated to >= 2.16.0
+ - fix(ci): add partner certification checker GH action
+
 ## [1.2.5]
 ### Fixed
  - Fix links to Automation Hub in CONTRIBUTING.md  [RHINENG-26295]
