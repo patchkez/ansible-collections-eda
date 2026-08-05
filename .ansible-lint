@@ -4,6 +4,7 @@
 # option are parsed relative to the CWD of execution.
 exclude_paths:
   - .github/
+  - productize.yml
 
 # Ansible-lint is able to recognize and load skip rules stored inside
 # `.ansible-lint-ignore` (or `.config/ansible-lint-ignore.txt`) files.
@@ -15,3 +16,5 @@ exclude_paths:
 # still visible, making it easier to address later.
 skip_list:
   - galaxy[version-incorrect]
+
+profile: production

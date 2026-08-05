@@ -42,6 +42,25 @@
         regexp: '/ansible_collections/redhatinsights/eda/'
         replace: '/ansible_collections/redhat/insights_eda/'
 
+    - name: Inject Support section into README.md
+      ansible.builtin.blockinfile:
+        path: "{{ builddir.path }}/README.md"
+        insertbefore: "## Contributing"
+        marker: ""
+        block: |
+          ## Support
+
+          This collection is maintained by the Red Hat Insights team.
+
+          As Red Hat Ansible Certified Content, this collection is entitled to
+          support through the Ansible Automation Platform (AAP) using the
+          **Create issue** button on the top right corner of the collection page
+          on Red Hat Ansible Automation Hub.
+
+          If a support case cannot be opened with Red Hat and the collection has
+          been obtained either from Galaxy or GitHub, community help may be
+          available on the [Ansible Forum](https://forum.ansible.com/).
+
     - name: Build collection
       ansible.builtin.command: 'ansible-galaxy collection build "{{ builddir.path }}"'
       register: collection_build

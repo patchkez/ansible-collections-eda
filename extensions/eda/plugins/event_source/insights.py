@@ -1,3 +1,5 @@
+# Copyright 2024 Red Hat, Inc.
+# SPDX-License-Identifier: Apache-2.0
 """insights.py.
 
 An ansible-rulebook event source module for receiving Red Hat Insights events.
@@ -135,7 +137,7 @@ async def webhook(request: web.Request) -> web.Response:
     return web.Response(text=endpoint)
 
 
-def _get_request_token(request: web.Request) -> Union[None, str]:
+def _get_request_token(request: web.Request) -> Union[str, None]:
     if INSIGHTS_TOKEN_HEADER in request.headers:
         return request.headers[INSIGHTS_TOKEN_HEADER]
     if AUTHORIZATION_HEADER in request.headers:
